@@ -7,7 +7,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 const config: Config = {
   title: 'My Site',
   tagline: 'You are cool',
-  // favicon: 'img/favicon.ico',
+  favicon: 'img/favicon-svg.svg',
 
   // Set the production url of your site here
   url: 'https://blog.wangyx.com',
@@ -38,7 +38,8 @@ const config: Config = {
       },
     },
   },
-
+  // themes: ['@docusaurus/theme-search-algolia'],
+  plugins: ['@docusaurus/theme-live-codeblock'],
   presets: [
     [
       'classic',
@@ -46,7 +47,7 @@ const config: Config = {
         docs: {
           sidebarPath: './sidebars.ts',
           routeBasePath: '/', 
-          breadcrumbs: false,
+          breadcrumbs: true,
 
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
@@ -78,6 +79,7 @@ const config: Config = {
   themeConfig: {
     // Replace with your project's social card
     // image: 'img/docusaurus-social-card.jpg',
+    respectPrefersColorScheme: true,
     docs: {
       sidebar: {
         hideable: true,
@@ -90,6 +92,7 @@ const config: Config = {
       //   alt: 'My Site Logo',
       //   src: 'img/logo.svg',
       // },
+      style: 'primary',
       items: [
         {
           type: 'docSidebar',
@@ -97,6 +100,12 @@ const config: Config = {
           position: 'left',
           label: 'Course',
         },
+        // {
+        //   type: 'docSidebar',
+        //   sidebarId: 'columnSidebar',
+        //   position: 'left',
+        //   label: 'Column',
+        // },
         // {
         //   type: 'docSidebar',
         //   sidebarId: 'courseSidebar',
@@ -123,6 +132,10 @@ const config: Config = {
         // },
         {
           type: 'localeDropdown',
+          position: 'right',
+        },
+        {
+          type: 'search',
           position: 'right',
         },
       ],
@@ -160,6 +173,13 @@ const config: Config = {
       ],
       copyright: `Copyright © ${new Date().getFullYear()} My Project, WangYX.`,
     },
+    liveCodeBlock: {
+      /**
+       * The position of the live playground, above or under the editor
+       * Possible values: "top" | "bottom"
+       */
+      playgroundPosition: 'bottom',
+    },
     // algolia: {
     //   // The application ID provided by Algolia
     //   appId: 'YOUR_APP_ID',
@@ -171,26 +191,6 @@ const config: Config = {
 
     //   // Optional: see doc section below
     //   contextualSearch: true,
-
-    //   // Optional: Specify domains where the navigation should occur through window.location instead on history.push. Useful when our Algolia config crawls multiple documentation sites and we want to navigate with window.location.href to them.
-    //   // externalUrlRegex: 'external\\.com|domain\\.com',
-
-    //   // Optional: Replace parts of the item URLs from Algolia. Useful when using the same search index for multiple deployments using a different baseUrl. You can use regexp or string in the `from` param. For example: localhost:3000 vs myCompany.com/docs
-    //   replaceSearchResultPathname: {
-    //     from: '/docs/', // or as RegExp: /\/docs\//
-    //     to: '/',
-    //   },
-
-    //   // Optional: Algolia search parameters
-    //   searchParameters: {},
-
-    //   // Optional: path for search page that enabled by default (`false` to disable it)
-    //   searchPagePath: 'search',
-
-    //   // Optional: whether the insights feature is enabled or not on Docsearch (`false` by default)
-    //   insights: false,
-
-    //   //... other Algolia params
     // },
     prism: {
       theme: prismThemes.github,
