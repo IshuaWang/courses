@@ -20,7 +20,7 @@ const config: Config = {
   organizationName: 'IshuaWang', // Usually your GitHub org/user name.
   projectName: 'courses', // Usually your repo name.
 
-  onBrokenLinks: 'throw',
+  onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
 
   // Even if you don't use internationalization, you can use this field to set
@@ -97,12 +97,12 @@ const config: Config = {
           position: 'left',
           label: 'Tutorial',
         },
-        {
-          type: 'docSidebar',
-          sidebarId: 'courseSidebar',
-          position: 'left',
-          label: 'Course',
-        },
+        // {
+        //   type: 'docSidebar',
+        //   sidebarId: 'courseSidebar',
+        //   position: 'left',
+        //   label: 'Course',
+        // },
                 // {
         //   type: 'docSidebar',
         //   sidebarId: 'programSidebar',

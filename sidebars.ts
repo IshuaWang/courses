@@ -18,13 +18,13 @@ const sidebars: SidebarsConfig = {
 
   // But you can create a sidebar manually
 
-  courseSidebar: [
-    'course/demo2',
-    {
-      type: 'ref',
-      id: 'Intro/intro',
-    },
-  ],
+  // courseSidebar: [
+  //   'course/demo2',
+  //   {
+  //     type: 'ref',
+  //     id: 'Intro/intro',
+  //   },
+  // ],
     // columnSidebar: [
   //   'Intro/intro',
   //   {
