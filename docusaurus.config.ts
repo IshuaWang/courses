@@ -77,7 +77,7 @@ const config: Config = {
 
   themeConfig: {
     // Replace with your project's social card
-    image: 'img/docusaurus-social-card.jpg',
+    // image: 'img/docusaurus-social-card.jpg',
     docs: {
       sidebar: {
         hideable: true,
@@ -93,9 +93,9 @@ const config: Config = {
       items: [
         {
           type: 'docSidebar',
-          sidebarId: 'tutorialSidebar',
+          sidebarId: 'courseSidebar',
           position: 'left',
-          label: 'Tutorial',
+          label: 'Course',
         },
         // {
         //   type: 'docSidebar',
@@ -131,11 +131,11 @@ const config: Config = {
       style: 'light',
       links: [
         {
-          title: 'Docs',
+          title: 'Course',
           items: [
             {
-              label: 'Tutorial',
-              to: '/docs/intro',
+              label: 'Course',
+              to: '/docs/course',
             },
           ],
         },
