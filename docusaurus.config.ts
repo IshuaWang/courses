@@ -92,7 +92,7 @@ const config: Config = {
       //   alt: 'My Site Logo',
       //   src: 'img/logo.svg',
       // },
-      style: 'primary',
+      // style: 'primary',
       items: [
         {
           type: 'docSidebar',
