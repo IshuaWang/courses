@@ -142,35 +142,35 @@ const config: Config = {
     },
     footer: {
       style: 'light',
-      links: [
-        {
-          title: 'Course',
-          items: [
-            {
-              label: 'Course',
-              to: '/',
-            },
-          ],
-        },
-        {
-          title: 'Blog',
-          items: [
-            {
-              label: 'Blog',
-              to: '/blog',
-            },
-          ],
-        },
-        {
-          title: 'Home',
-          items: [
-            {
-              label: 'WangYX',
-              href: 'https://blog.wangyx.com',
-            },
-          ],
-        },
-      ],
+      // links: [
+      //   {
+      //     title: 'Course',
+      //     items: [
+      //       {
+      //         label: 'Course',
+      //         to: '/',
+      //       },
+      //     ],
+      //   },
+      //   {
+      //     title: 'Blog',
+      //     items: [
+      //       {
+      //         label: 'Blog',
+      //         to: '/blog',
+      //       },
+      //     ],
+      //   },
+      //   {
+      //     title: 'Home',
+      //     items: [
+      //       {
+      //         label: 'WangYX',
+      //         href: 'https://blog.wangyx.com',
+      //       },
+      //     ],
+      //   },
+      // ],
       copyright: `Copyright © ${new Date().getFullYear()} My Project, WangYX.`,
     },
     liveCodeBlock: {
